@@ -38,3 +38,13 @@ var myStr = "Jello World";
 myStr[0] = "H";
 console.log(myStr); // stays the same
 
+var otherStr = "Hello there";
+console.log(otherStr[otherStr.length - 1]);
+
+function wordBlanks (noun, adjective){
+    var result = "";
+    result += "The" + " " + adjective + " " + noun;
+    return result;
+}
+console.log(wordBlanks("chair", "big blue"))
+

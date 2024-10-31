@@ -22,4 +22,21 @@ const pi = 3.14; // CONSTANT variable
 var a;
 console.log(a);
 
-console.log(50 % 3)
+console.log(50 % 3);
+console.log();
+
+/**
+ * It is still possible to mutate a "const" array using index
+ * To ensure that a variable can never be changed, use Object.freeze(VARIABLE)
+ */
+const UNCHANGEOBJECT = {
+    PI: 3.14
+};
+Object.freeze(UNCHANGEOBJECT);
+
+try {
+    UNCHANGEOBJECT.PI = 99; // object can no longer be changed
+} catch(ex) {
+    console.log(ex);
+}
+console.log(UNCHANGEOBJECT);
